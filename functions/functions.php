@@ -625,7 +625,7 @@ if(isset($_POST['title']) && isset($_POST['gist']) ) {
 	$pix  = $pix;
 
 	$sql = "INSERT INTO article(`id`, `user`, `post`, `react`, `dateposted`, `title`, `uspix`, `articleurl`, `comment`)";
-	$sql .= "VALUES('$idid', '$user', '$gist', '0', '$date', '$titl', '$pix', '$post_url', '0')";
+	$sql.= "VALUES('$idid', '$user', '$gist', '0', '$date', '$titl', '$pix', '$post_url', '0')";
 	$res = query($sql);
 
 	$_SESSION['newpost'] = "Article posted submitted successfully";
